@@ -76,7 +76,7 @@ def won?(board)
      end
     end
   else
-    return false
+    false
   end
 end
 
