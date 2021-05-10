@@ -69,7 +69,6 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     
-     if position_1 == position_2 && position_2 == position_3
      if position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 == "O" && position_2 == "O" && position_3 == "O"
        return combination
      end
@@ -92,8 +91,6 @@ end
 def winner(board)
   if won?(board)
     return board[won?(board)[0]]
-  else
-    nil
   end
 end
 
